@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns ="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = tWalk class ="testPjt01.TransportationWalk" />	
+	<!-- bean이란 스프링 컨테이너의 객체이다. 
+		id속성은 개발자가 직접 정하고, class는 패키지명/클래스명 이다.
+		여기서는 testPjt01 패키지의 TransportationWalk 클래스로 부터 객체를 사용한다.
+		자바에서는 new를 생성했는데  (ex : TransportationWalk transportatoinWalk = new TransportationWalk();)
+		new 생성없이 bean 태그에 의해서 자동으로 객체가 생성이된다. (->메모리에 load됨) 
+		
+		생성이 됐으면 main클래스에서 사용하면 된다.-->
+</beans>

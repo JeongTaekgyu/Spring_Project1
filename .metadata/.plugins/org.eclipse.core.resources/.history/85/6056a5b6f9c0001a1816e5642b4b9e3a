@@ -1,0 +1,15 @@
+package testPjt01;
+
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TransportationWalk transportatoinWalk = new TransportationWalk();
+		// transportatoinWalk.move();
+		
+		// 스프링 컨테이너에 접근하기위한 방법은 GenericApplicationContext
+		GenericApplicationContext ctx = new GenericApplicationContext("classpath:applicationContext.xml");
+		GenericXmlApplicationContext
+	}
+
+}

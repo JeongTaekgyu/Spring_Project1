@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns ="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id = tWalk class ="testPjt01.TransportationWalk" />	
+	<!-- bean이란 스프링 컨테이너의 객체이다. 
+		id속성은 개발자가 직접 정하고, class는 패키지명/클래스명 이다.
+		여기서는 testPjt01.TransportationWalk-->
+</beans>

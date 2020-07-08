@@ -1,0 +1,21 @@
+package testPjt01;
+
+import org.springframework.context.support.GenericXmlApplicationContext;
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		// TransportationWalk transportatoinWalk = new TransportationWalk();
+		// transportatoinWalk.move();
+		
+		// 스프링 컨테이너에 접근하기위한 방법은 GenericApplicationContext
+		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext("classpath:applicationContext.xml");
+		
+		TransportationWalk transportationWalk = ctx.getBean("tWalk", TransportationWalk.class);
+		transportationWalk.move(); 
+		
+		// 자바에서는 외부 리소스를 사용하면 반환을 해줘야한다.
+		ctx.close()
+	}
+
+}
